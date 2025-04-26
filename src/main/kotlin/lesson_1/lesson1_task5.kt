@@ -2,11 +2,12 @@ package org.example.lesson_1
 
 fun main() {
     val countSeconds = 6480
+    val convertTime = 60
 
-    val countMinutes = countSeconds / 60
-    val secondsRemainder = countSeconds % 60
-    val countHours = countMinutes / 60
-    val minutesRemainder = countMinutes % 60
+    val countMinutes = countSeconds / convertTime
+    val secondsRemainder = countSeconds % convertTime
+    val countHours = countMinutes / convertTime
+    val minutesRemainder = countMinutes % convertTime
 
-    println("0$countHours:$minutesRemainder:0$secondsRemainder")
+    println(String.format("0%d:%02d:%02d", countHours, minutesRemainder, secondsRemainder))
 }
