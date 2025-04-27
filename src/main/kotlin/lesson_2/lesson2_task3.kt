@@ -6,7 +6,6 @@ fun main() {
     val travelTime = 457
     val convertTime = 60
 
-    //общее количество минут с начала дня до прибытия
     val totalDepartureMinutes = hourDeparture * convertTime + minuteDeparture
     val totalArrivalMinutes = totalDepartureMinutes + travelTime
 
