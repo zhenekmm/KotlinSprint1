@@ -5,17 +5,11 @@ fun main() {
     var endPoint = "E4"
     var numberMove = 1
 
-    println("""Шаг №$numberMove
-        |$startPoint
-        |$endPoint
-    """.trimMargin())
+    println("$startPoint-$endPoint;$numberMove")
 
     startPoint = "D2"
     endPoint = "D3"
     numberMove++
 
-    println("""Шаг №$numberMove
-        |$startPoint
-        |$endPoint
-    """.trimMargin())
+    println("$startPoint-$endPoint;$numberMove")
 }
