@@ -4,6 +4,7 @@ fun main() {
     val countCrystallineOre = 7
     val ironOre = 11
     val gainPercentage = 20
+
     val totalPercentage = 100
 
     val crystallineBonus = (countCrystallineOre * gainPercentage / totalPercentage).toInt()
