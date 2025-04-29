@@ -1,10 +1,11 @@
 package org.example.lesson_4
 
-fun main() {
-    val weatherTodaySunny = true
-    val awning = true
-    val airHumidity = 20
-    val currentSeason = "winter"
+const val WEATHER_TODAY_SUNNY = true
+const val AWNING = true
+const val AIR_HUMIDITY = 20
+const val CURRENT_SEASON = "winter"
 
-    println("Благоприятные ли условия сейчас для роста бобовых? ${(weatherTodaySunny == true) && (awning == true) && (airHumidity == 20) && (currentSeason != "winter")}")
+fun main() {
+    println("Благоприятные ли условия сейчас для роста бобовых? " +
+            "${(WEATHER_TODAY_SUNNY == true) && (AWNING == true) && (AIR_HUMIDITY == 20) && (CURRENT_SEASON != "winter")}")
 }
