@@ -1,11 +1,17 @@
 package org.example.lesson_4
 
-const val WEATHER_TODAY_SUNNY = true
-const val AWNING = true
+const val isSunny = true
+const val isAwningOpen = true
 const val AIR_HUMIDITY = 20
-const val CURRENT_SEASON = "winter"
+const val SEASON = "summer"
 
 fun main() {
+    val isSunnyCurrent = true
+    val isAwningOpenCurrent = true
+    val airHumidityCurrent = 20
+    val seasonCurrent = "winter"
+
     println("Благоприятные ли условия сейчас для роста бобовых? " +
-            "${(WEATHER_TODAY_SUNNY == true) && (AWNING == true) && (AIR_HUMIDITY == 20) && (CURRENT_SEASON != "winter")}")
+            "${(isSunny == isSunnyCurrent) && (isAwningOpen == isAwningOpenCurrent) 
+                    && (AIR_HUMIDITY == airHumidityCurrent) && (SEASON == seasonCurrent)}")
 }
