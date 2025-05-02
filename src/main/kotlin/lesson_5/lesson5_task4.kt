@@ -6,13 +6,14 @@ fun main() {
 
     print("Введите имя пользователя: ")
     val inputUserName = readln()
-    print("Введите пароль: ")
-    val inputPassword = readln()
 
-    if (inputUserName == userName && inputPassword == password){
-        println("Пользователь \"$userName\", вам разрешено входить на борт корабля \"Heart of Gold\". Добро пожаловать!")
-    }
-    else{
+    if (inputUserName == userName) {
+        print("Введите пароль: ")
+        val inputPassword = readln()
+        if (inputPassword == password) {
+            println("Пользователь \"$userName\", вам разрешено входить на борт корабля \"Heart of Gold\". Добро пожаловать!")
+        }
+    } else {
         println("Такого пользователя не найдено. Хотите зарегистрироваться?")
     }
 }
